@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌲 Усадьба «Кедровый дворик» — Телецкое озеро</title>
+    <meta name="description" content="Усадьба Кедровый дворик на Телецком озере. Уютные номера для семейного отдыха. Бронирование онлайн. с.Артыбаш, ул.Садовая 1а">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-block">
+                <h1 class="logo">🌲 Кедровый дворик</h1>
+                <span class="sub-logo">Усадьба на Телецком озере</span>
+            </div>
+            <nav>
+                <a href="#rooms">Номера</a>
+                <a href="#gallery-section">Галерея</a>
+                <a href="#map-section">На карте</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>Добро пожаловать в «Кедровый дворик»!</h2>
+            <p>Уютная усадьба на берегу Телецкого озера. Мы предлагаем комфортные номера для семейного отдыха, компаний друзей и романтических поездок. Чистый горный воздух, живописные виды и домашняя атмосфера ждут вас!</p>
+        </div>
+    </section>
+
+    <section id="rooms" class="rooms">
+        <div class="container">
+            <h2>Наши номера</h2>
+            <div id="rooms-list" class="rooms-grid"></div>
+        </div>
+    </section>
+
+    <section id="gallery-section" class="gallery-section">
+        <div class="container">
+            <h2>📸 Фотографии усадьбы</h2>
+            <div id="gallery-grid" class="gallery-grid"></div>
+        </div>
+    </section>
+
+    <section id="map-section" class="map-section">
+        <div class="container">
+            <h2>📍 Как нас найти</h2>
+            <div id="map" style="height: 450px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);"></div>
+            <div style="text-align:center;margin-top:15px;">
+                <p id="map-address" style="font-size:18px;color:#555;">📍 Республика Алтай, с. Артыбаш, ул. Садовая, 1а</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2>📞 Контакты</h2>
+            <div class="contacts-info">
+                <p><strong>📞 Телефон:</strong> <span id="contact-phone">+7 (903) 072-94-95</span></p>
+                <p><strong>📧 Email:</strong> <span id="contact-email">kedroviy-dvorik@mail.ru</span></p>
+                <p><strong>📍 Адрес:</strong> <span id="contact-address">Республика Алтай, с. Артыбаш, ул. Садовая, 1а</span></p>
+                <p><strong>🌊 Озеро:</strong> Телецкое озеро (200 м от берега)</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Усадьба «Кедровый дворик» на Телецком озере. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

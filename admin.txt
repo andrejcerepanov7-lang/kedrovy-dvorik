@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель — Кедровый дворик</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .admin-panel { max-width: 900px; margin: 40px auto; padding: 30px; background: #fff; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .admin-panel h2 { margin-top: 0; color: #2d5016; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; font-weight: bold; margin-bottom: 5px; }
+        .form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; }
+        .form-group textarea { resize: vertical; min-height: 60px; }
+        .btn { background: #2d5016; color: white; padding: 12px 30px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; }
+        .btn:hover { background: #3a6b1e; }
+        .btn-danger { background: #c0392b; margin-left: 10px; }
+        .btn-danger:hover { background: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #2d5016; text-decoration: none; font-weight: bold; }
+        .back-link:hover { text-decoration: underline; }
+        .room-item { border: 1px solid #eee; padding: 15px; margin-bottom: 15px; border-radius: 8px; background: #f9f9f9; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        .room-item strong { color: #2d5016; }
+        .room-actions button { margin-left: 10px; padding: 6px 14px; border: none; border-radius: 6px; cursor: pointer; }
+        .room-actions .edit-btn { background: #f39c12; color: white; }
+        .room-actions .delete-btn { background: #c0392b; color: white; }
+        .gallery-item { display: inline-block; margin: 10px; position: relative; }
+        .gallery-item img { width: 120px; height: 90px; object-fit: cover; border-radius: 8px; }
+        .gallery-item button { position: absolute; top: -8px; right: -8px; background: #c0392b; color: white; border: none; border-radius: 50%; width: 24px; height: 24px; cursor: pointer; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="admin-panel">
+        <a href="index.html" class="back-link">← На главную</a>
+        <h2>⚙️ Управление усадьбой</h2>
+        <p style="color:#e67e22; background:#fef9e7; padding:10px; border-radius:8px;">
+            ⚠️ В этой версии изменения НЕ сохраняются автоматически.<br>
+            Отредактируйте файл <strong>script.js</strong> вручную (все данные в самом верху) и загрузите на GitHub.
+        </p>
+        <hr>
+        <h3>Список номеров</h3>
+        <div id="rooms-admin-list"></div>
+        <hr>
+        <h3>📞 Контакты</h3>
+        <div id="contacts-display"></div>
+        <hr>
+        <h3>🖼️ Галерея</h3>
+        <div id="gallery-admin-list"></div>
+        <hr>
+        <p><strong>Как обновить данные:</strong></p>
+        <ol>
+            <li>Откройте файл <strong>script.js</strong> в любом текстовом редакторе</li>
+            <li>В самом верху найдите функцию <strong>getDefaultData()</strong></li>
+            <li>Поменяйте цены, описания, ссылки на фото, контакты</li>
+            <li>Сохраните файл и загрузите на GitHub</li>
+        </ol>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
